@@ -1,0 +1,44 @@
+•{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #B81450;
+}
+
+header{
+    background-color: #fff;
+    font-size: 30px;
+}
+
+.logo-header{
+    max-width: 50px;
+    filter: brightness(0) saturate(100%) invert(16%) sepia(97%) saturate(2407%) hue-rotate(321deg) brightness(93%) contrast(102%);
+}
+
+header a{
+    color: #B81450 !important; 
+}
+
+.border-form-custom-color{
+    border: 1px solid #B81450;
+}
+
+.ticket-height{
+    height: 125px;
+}
+
+.custom-border-tb{
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+.bg-gray{
+    background-color: gray;
+}
+
+.custom-border-end{
+    border-right: 1px solid gray;
+}
