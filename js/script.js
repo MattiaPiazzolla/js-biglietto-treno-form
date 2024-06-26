@@ -1,6 +1,8 @@
     // RECUPERO IL BOTTONE PER IL CALCOLO DEL PREZZO E IL BOTTONE ANNULLA
 const calcBtn = document.getElementById('price-calculator');
 const canBtn = document.getElementById('cancel');
+    // RECUPERO IL VALORE DI FORM
+const form = document.getElementById('form-ticket');
 
 calcBtn.addEventListener('click', function () {
     // RECUPERO I DATI DALLA FORM
@@ -18,7 +20,7 @@ calcBtn.addEventListener('click', function () {
     let cabin = Math.floor(Math.random() * 15 +1);
 
     // DEFINISCO LA CODICE CP
-    let cpCode = Math.floor(Math.random() * 99999 +1);
+    let cpCode = Math.floor(Math.random() * 100000 +1);
 
     // DEFINISCO LA CATEGORIA DEL BIGLIETTO
     let ticketCategory = 'Biglietto Standard'
@@ -66,5 +68,15 @@ calcBtn.addEventListener('click', function () {
                                 </div>
                             </div>
                         </div>`;
+})
 
+// ATTRIBUISCO LA FUNZIONE DI RESET AL BOTTONE ANNULLA
+canBtn.addEventListener('click', function (){
+    // RESETTO LE VARIABILI DEL FORM
+    let fullName = document.getElementById('full-name').value = "";
+    let km = document.getElementById('km').value = "";
+    let fDE = document.getElementById('fde').value = "adult";
+    //NASCONDO IL MESSAGGIO E LA CARD DEL BIGLIETTO
+    document.getElementById('msg').innerHTML = '';
+    document.getElementById('ticket').innerHTML = '';
 })
