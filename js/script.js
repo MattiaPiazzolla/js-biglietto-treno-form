@@ -32,6 +32,8 @@ calcBtn.addEventListener('click', function () {
         msg = `Il passeggero ${fullName} ha diritto ad uno sconto del 40%, il prezzo del biglietto è di ${finalPrice}€`
         ticketCategory = 'Biglietto Senior'
     }
+    document.getElementById('msg').innerHTML = `<p class="fs-6 text-secondary">${msg}</p>`
+    
 
     // DEFINISCO L'OUTPUT DELLA CARD DEL BIGLIETTO 
     document.getElementById('ticket').innerHTML = `<h2 class="text-center text-white">IL TUO BIGLIETTO</h2>
@@ -58,7 +60,7 @@ calcBtn.addEventListener('click', function () {
                                         </div>
                                         <div class="col-2 d-flex flex-column justify-content-between custom-border-tb custom-border-end">
                                             <p class="fw-bold">Costo biglietto</p>
-                                            <p>${finalPrice}</p>
+                                            <p>${finalPrice}€</p>
                                         </div>
                                     </div>
                                 </div>
