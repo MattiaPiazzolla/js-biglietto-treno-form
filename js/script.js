@@ -18,7 +18,9 @@ calcBtn.addEventListener('click', function () {
     if(fDE === 'minorenne'){
         finalPrice = price * 0.8;
         msg = `Il passeggero ${fullName} ha diritto ad uno sconto del 20%, il prezzo del biglietto è di ${finalPrice}€`
+    } else if (fDE === 'senior') {
+        finalPrice = price * 0.6;
+        msg = `Il passeggero ${fullName} ha diritto ad uno sconto del 40%, il prezzo del biglietto è di ${finalPrice}€`
     }
-
     console.log(msg)
 })
