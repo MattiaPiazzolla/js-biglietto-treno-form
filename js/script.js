@@ -11,5 +11,9 @@ calcBtn.addEventListener('click', function () {
     let price = km * 0.21;
     // DICHIARO LA VARIABILE CHE ANDRO A VISUALIZZARE NELL'OUTPUT E LE ASSEGNO IL PREZZO CALCOLATO IN PRECEDENZA
     let finalPrice = price
+    // DICHIARO LA VARIABILE MSG CHE ANDRO A MOSTRARE  NELL'OUTPUT
+    let msg = `${fullName} devi pagare il prezzo intero pari a ${finalPrice}`
+
+    
 
 })
