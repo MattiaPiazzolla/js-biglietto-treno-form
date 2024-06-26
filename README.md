@@ -19,7 +19,7 @@ SCOMPOSIZIONE IN SOTTOPROBLEMI
     >>attribuisco ad una const i lavore recuperato dal bottone
     >>dico al bottone di aspettare un'azione (click)
         >>>all'inesco di quest'azione (click), tramime una funzione, faccio in modo che recuperi le informazioni (nome completo, km e fascia di età ) inserite nel form (precedentemente strutturato in html)
-            >>>>attribuisco ad dei let i lavori recuperati dal bottone 
+            >>>>attribuisco a dei let i vori recuperati dal form 
 >definisco una variabile price 
     >>attibuisco come valore il risultato del calcolo ottenuto moltiplicando il numero di chilometri da precorrere dall'utente con 0,21 
 >definisco una variabile msg per l'output delle informazioni sul prezzo del biglietto (card del biglietto)

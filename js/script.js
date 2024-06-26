@@ -7,8 +7,9 @@ calcBtn.addEventListener('click', function () {
     let fullName = document.getElementById('full-name').value;
     let km = document.getElementById('km').value;
     let fDE = document.getElementById('fde').value;
+    // CALCOLO IL PREZZO E LO ATTRIBUISCO AD UNA VARIABILE PRICE
+    let price = km * 0.21;
+    // DICHIARO LA VARIABILE CHE ANDRO A VISUALIZZARE NELL'OUTPUT E LE ASSEGNO IL PREZZO CALCOLATO IN PRECEDENZA
+    let finalPrice = price
 
-    console.log(fullName)
-    console.log(km)
-    console.log(fDE)
 })
