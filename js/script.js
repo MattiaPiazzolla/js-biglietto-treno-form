@@ -12,8 +12,13 @@ calcBtn.addEventListener('click', function () {
     // DICHIARO LA VARIABILE CHE ANDRO A VISUALIZZARE NELL'OUTPUT E LE ASSEGNO IL PREZZO CALCOLATO IN PRECEDENZA
     let finalPrice = price
     // DICHIARO LA VARIABILE MSG CHE ANDRO A MOSTRARE  NELL'OUTPUT
-    let msg = `${fullName} devi pagare il prezzo intero pari a ${finalPrice}`
+    let msg = `Il passeggero ${fullName} deve pagare il prezzo intero pari a ${finalPrice}€`   
 
-    
+    // DEFINISCO LE CONDIZIONI NELLE QUALI APPLICARE LO SCONTO
+    if(fDE === 'minorenne'){
+        finalPrice = price * 0.8;
+        msg = `Il passeggero ${fullName} ha diritto ad uno sconto del 20%, il prezzo del biglietto è di ${finalPrice}€`
+    }
 
+    console.log(msg)
 })
