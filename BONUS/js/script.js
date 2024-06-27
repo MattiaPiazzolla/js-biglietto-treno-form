@@ -74,7 +74,7 @@ calcBtn.addEventListener('click', priceCalculator)
 
 document.addEventListener('keydown', function (event) {
     if (event.key === 'Enter') {
-        event.preventDefault(); // Evita che il form venga inviato
+        event.preventDefault();
         calculateTicketPrice();
     }
 });
