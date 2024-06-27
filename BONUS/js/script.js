@@ -83,9 +83,9 @@ document.addEventListener('keydown', function (event) {
 // ATTRIBUISCO LA FUNZIONE DI RESET AL BOTTONE ANNULLA
 canBtn.addEventListener('click', function (){
     // RESETTO LE VARIABILI DEL FORM
-    let fullName = document.getElementById('full-name').value = "";
-    let km = document.getElementById('km').value = "";
-    let fDE = document.getElementById('fde').value = "adult";
+    fullName = document.getElementById('full-name').value = "";
+    km = document.getElementById('km').value = "";
+    fDE = document.getElementById('fde').value = "adult";
     //NASCONDO IL MESSAGGIO E LA CARD DEL BIGLIETTO
     document.getElementById('msg').innerHTML = '';
     document.getElementById('ticket').innerHTML = '';
